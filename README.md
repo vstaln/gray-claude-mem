@@ -1,4 +1,14 @@
-# gray-claude-mem
+<p align="center">
+  <img src="assets/gray-logo.svg" alt="gray" width="96">
+  <img src="assets/claude.svg" alt="claude" width="96">
+</p>
+<h1 align="center">gray-claude-mem</h1>
+<p align="center">Auto-captured session memory — one compact entry per turn, recalled as prompt context.</p>
+<p align="center">
+  <a href="https://github.com/vstaln/gray-claude-mem/blob/main/LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
+  <img alt="gray plugin" src="https://img.shields.io/badge/gray-plugin-7aa2f7.svg">
+  <img alt="rust" src="https://img.shields.io/badge/built%20with-rust-orange.svg">
+</p>
 
 Auto-captured session memory for gray — the delta that
 [gray-memory](../gray-memory) deliberately doesn't cover. gray-memory is
@@ -40,17 +50,13 @@ gray plugin capabilities claude-mem --all   # optional: prose summaries
 
 Works fine ungranted — `host/run` errors degrade to heuristic entries.
 
-## Upstream
-
-[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) —
-Apache-2.0. Behavioral port of the auto-capture + recall contract; store
-format and heuristics reimplemented (upstream uses a worker + sqlite +
-LLM compression; this port is a single sidecar with jsonl + optional
-host/run compression).
-
 ## Install
 
 ```sh
 cargo install --path .
 gray plugin install ~/.cargo/bin/gray-claude-mem
 ```
+
+---
+Part of the [gray](https://github.com/vstaln/gray) plugin ecosystem —
+the open-source AI agent harness. <https://gray.alignment.id>
