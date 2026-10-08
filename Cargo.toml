@@ -1,0 +1,17 @@
+[package]
+name = "gray-claude-mem"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.91"
+license = "MIT"
+description = "Auto session memory: captures compact turn summaries to jsonl, injects recent entries, mem_search + /mem"
+
+[[bin]]
+name = "gray-claude-mem"
+path = "src/main.rs"
+
+[dependencies]
+serde_json = "1"
+
+[profile.release]
+strip = true
